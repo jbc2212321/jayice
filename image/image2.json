@@ -1,0 +1,160 @@
+{
+  "words_result_num": 43,
+  "words_result": {
+    "AmountInWords": "玖仟零叁拾圆整",
+    "InvoiceNumConfirm": "84240270",
+    "CommodityEndDate": [],
+    "CommodityVehicleType": [],
+    "CommodityStartDate": [],
+    "CommodityPrice": [
+      {
+        "row": "1",
+        "word": "1.97029702970"
+      },
+      {
+        "row": "2",
+        "word": "517.8217821782"
+      }
+    ],
+    "NoteDrawer": "管理员",
+    "SellerAddress": "11",
+    "CommodityNum": [
+      {
+        "row": "1",
+        "word": "70"
+      },
+      {
+        "row": "2",
+        "word": "2"
+      },
+      {
+        "row": "3",
+        "word": "517.82178"
+      },
+      {
+        "row": "4",
+        "word": "30"
+      }
+    ],
+    "SellerRegisterNum": "924303211000",
+    "MachineCode": "929908720271",
+    "Remarks": "校验码02624",
+    "SellerBank": "",
+    "CommodityTaxRate": [
+      {
+        "row": "1",
+        "word": "1%"
+      },
+      {
+        "row": "2",
+        "word": "1%"
+      },
+      {
+        "row": "3",
+        "word": "1%"
+      },
+      {
+        "row": "4",
+        "word": "1%"
+      }
+    ],
+    "TotalTax": "89.41",
+    "InvoiceCodeConfirm": "043001900104",
+    "CheckCode": "02624",
+    "InvoiceCode": "043001900104",
+    "InvoiceDate": "2020年03月01日",
+    "PurchaserRegisterNum": "91430300",
+    "InvoiceTypeOrg": "湖南增值税普通发票",
+    "OnlinePay": "",
+    "Password": "03*+440-73466-*885-1+9123/>262+*>768<//01<1>29-9693+90/2704961-6*61+4>16>3>7>+0*/993743+99>",
+    "Agent": "否",
+    "AmountInFiguers": "9030.00",
+    "PurchaserBank": "",
+    "Checker": "周波涛",
+    "City": "",
+    "TotalAmount": "8940.59",
+    "CommodityAmount": [
+      {
+        "row": "1",
+        "word": "207.92"
+      },
+      {
+        "row": "2",
+        "word": "1158.42"
+      },
+      {
+        "row": "3",
+        "word": "7128.71"
+      },
+      {
+        "row": "4",
+        "word": "445.54"
+      }
+    ],
+    "PurchaserName": "中国太平集支公",
+    "CommodityType": [],
+    "Province": "湖南",
+    "InvoiceType": "普通发票",
+    "SheetNum": "第二联：发票联",
+    "PurchaserAddress": "",
+    "CommodityTax": [
+      {
+        "row": "1",
+        "word": "2.08"
+      },
+      {
+        "row": "2",
+        "word": "11.58"
+      },
+      {
+        "row": "3",
+        "word": "71.29"
+      },
+      {
+        "row": "4",
+        "word": "4.46"
+      }
+    ],
+    "CommodityPlateNum": [],
+    "CommodityUnit": [
+      {
+        "row": "1",
+        "word": "个"
+      },
+      {
+        "row": "2",
+        "word": "盒"
+      },
+      {
+        "row": "3",
+        "word": "件"
+      },
+      {
+        "row": "4",
+        "word": "盒"
+      }
+    ],
+    "Payee": "刘立志",
+    "CommodityName": [
+      {
+        "row": "1",
+        "word": "*文具*文具盒(袋)"
+      },
+      {
+        "row": "2",
+        "word": "*文具*记号笔"
+      },
+      {
+        "row": "3",
+        "word": "*纸制品*A4纸"
+      },
+      {
+        "row": "4",
+        "word": "*文具*修正液"
+      }
+    ],
+    "SellerName": "相泽务票商行",
+    "InvoiceNum": "84241274"
+  },
+  "log_id": 1506618816493455167
+}

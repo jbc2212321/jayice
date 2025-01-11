@@ -1,0 +1,8 @@
+mysql:
+  #username: jbc
+  #password: "123456"
+#  host: "47.96.86.248"
+  username: root
+  host: "14.103.229.14"
+  password: "jbc_111111"
+  dbname: jayice_workflow
