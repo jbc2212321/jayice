@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"os"
 	"ticket/middleware"
 	"ticket/routers"
 	"ticket/util"
@@ -10,6 +11,12 @@ import (
 
 func main() {
 	fmt.Println("hello world")
+
+	var PORT string
+	if PORT = os.Getenv("PORT"); PORT == "" {
+		PORT = "8096"
+	}
+
 	r := gin.Default()
 	r.Use(middleware.LoggerMiddleware())
 	r.Use(util.Cors())
@@ -73,5 +80,5 @@ func main() {
 
 	//提交交易
 	r.POST("/user/song/addTradeList", routers.AddTradeList)
-	_ = r.Run(":8096")
+	_ = r.Run(":" + PORT)
 }
