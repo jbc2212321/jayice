@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"ticket/middleware"
 	"ticket/routers"
@@ -8,6 +9,7 @@ import (
 )
 
 func main() {
+	fmt.Println("hello world")
 	r := gin.Default()
 	r.Use(middleware.LoggerMiddleware())
 	r.Use(util.Cors())

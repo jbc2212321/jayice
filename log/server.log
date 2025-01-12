@@ -2820,3 +2820,6 @@ time="2022-05-01T23:20:45+08:00" level=info latency_time=3.6966ms remote_ip="::1
 time="2022-05-01T23:20:47+08:00" level=info latency_time=0s remote_ip="::1" req_method=OPTIONS req_uri=/user/song/buyDel status_code=204
 time="2022-05-01T23:20:47+08:00" level=info latency_time=7.6758ms remote_ip="::1" req_method=POST req_uri=/user/song/buyDel status_code=200
 time="2022-05-01T23:20:47+08:00" level=info latency_time=2.5369ms remote_ip="::1" req_method=POST req_uri=/user/song/tradeList status_code=200
+time="2025-01-12T02:17:35+08:00" level=info latency_time="511.6µs" remote_ip=127.0.0.1 req_method=GET req_uri=/ status_code=200
+time="2025-01-12T02:17:35+08:00" level=info latency_time=0s remote_ip=127.0.0.1 req_method=GET req_uri=/favicon.ico status_code=404
+time="2025-01-12T02:17:50+08:00" level=info latency_time=0s remote_ip=127.0.0.1 req_method=GET req_uri=/ status_code=200
