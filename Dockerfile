@@ -1,7 +1,7 @@
 # /Dockerfile
 
 # Step 1: Build the Go binary
-FROM golang:alpine
+FROM docker.1ms.run/golang:alpine
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
@@ -27,7 +27,7 @@ WORKDIR /root/
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /app/main .
 
-# Expose port 8080 to the outside world
+# Expose port 8096 to the outside world
 ENV PORT=8096
 
 # Command to run the executable
