@@ -3,12 +3,13 @@ package routers
 import (
 	"fmt"
 	"io/ioutil"
-	"ticket/middleware"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
+
 	//	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"ticket/database"
-	"ticket/util"
 )
 
 type BuyParam struct {
@@ -166,7 +167,7 @@ type AddTradeListParam struct {
 	Status  string `json:"status" binding:"required"`
 }
 
-//保存到trainlist 提交交易
+// 保存到trainlist 提交交易
 func AddTradeList(c *gin.Context) {
 	//var json database.VatInvoice
 	var json AddTradeListParam

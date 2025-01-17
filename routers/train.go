@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 	"time"
 )
 
@@ -22,7 +22,7 @@ type SaveTrainParam struct {
 	Train     database.Train `json:"train" binding:"required"`
 }
 
-//上传火车票
+// 上传火车票
 func SaveTrain(c *gin.Context) {
 	var json SaveTrainParam
 	resp := util.GetResponse()

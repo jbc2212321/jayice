@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 	"fmt"
-	"ticket/util"
+	"jayice/util"
 	"time"
 )
 
@@ -25,7 +25,7 @@ func (m *User) TableName() string {
 type UserImpl struct {
 }
 
-//验证是否存在用户
+// 验证是否存在用户
 func (u *UserImpl) ExistUser(phone, category int64) bool {
 	db := GetDB()
 	var user User
@@ -47,7 +47,7 @@ func (u *UserImpl) AddUser(user *User) error {
 	return nil
 }
 
-//用户登录
+// 用户登录
 func (u *UserImpl) CheckUser(phone, category int64, password string) int64 {
 	db := GetDB()
 	var user User
@@ -65,7 +65,7 @@ func (u *UserImpl) CheckUser(phone, category int64, password string) int64 {
 	return user.Id
 }
 
-//用户信息
+// 用户信息
 func (u *UserImpl) GetUserById(idList ...int64) ([]*User, error) {
 	db := GetDB()
 	users := new([]*User)
@@ -76,7 +76,7 @@ func (u *UserImpl) GetUserById(idList ...int64) ([]*User, error) {
 	return *users, nil
 }
 
-//用户列表
+// 用户列表
 func (u *UserImpl) ListUser() ([]*User, error) {
 	db := GetDB()
 	users := new([]*User)
@@ -92,7 +92,7 @@ func (u *UserImpl) ListUser() ([]*User, error) {
 	return *users, nil
 }
 
-//删除用户
+// 删除用户
 func (u *UserImpl) DelUserById(idList ...int64) error {
 	db := GetDB()
 	err := db.Model(&User{}).Where("id = ?", idList).Delete(&User{}).Error

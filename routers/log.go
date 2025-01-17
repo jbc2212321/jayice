@@ -3,10 +3,10 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 	"time"
 )
 
@@ -25,7 +25,7 @@ func GetLog(userId int64, operation string) *database.Log {
 	return log
 }
 
-//日志列表
+// 日志列表
 func ListLog(c *gin.Context) {
 	resp := util.GetResponse()
 	logs, err := logDao.ListLog()
@@ -62,7 +62,7 @@ type DelLogParam struct {
 	Id string `json:"num" binding:"required"`
 }
 
-//删除日志
+// 删除日志
 func DelLog(c *gin.Context) {
 	resp := util.GetResponse()
 	var json DelLogParam

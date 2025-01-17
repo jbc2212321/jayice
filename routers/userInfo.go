@@ -3,9 +3,9 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/middleware"
-	"ticket/util"
 )
 
 type UserInfoParam struct {
@@ -13,7 +13,7 @@ type UserInfoParam struct {
 	UserId string `json:"userId" binding:"required"`
 }
 
-//查询用户信息
+// 查询用户信息
 func UserInfo(c *gin.Context) {
 	var json UserInfoParam
 	resp := util.GetResponse()

@@ -3,9 +3,9 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/middleware"
-	"ticket/util"
 	"time"
 )
 
@@ -23,7 +23,7 @@ type DelTicketByTicketIdParam struct {
 	TicketId string `json:"ticketId" binding:"required"`
 }
 
-//展示小票
+// 展示小票
 func ShowTicket(c *gin.Context) {
 	//var json database.VatInvoice
 	var json ShowTicketParam
@@ -59,7 +59,7 @@ func ShowTicket(c *gin.Context) {
 	c.JSON(http.StatusOK, resp)
 }
 
-//小票列表
+// 小票列表
 func ListTicketByUserId(c *gin.Context) {
 	//var json database.VatInvoice
 	var json ListTicketByUserIdParam

@@ -2,9 +2,9 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/middleware"
-	"ticket/util"
 )
 
 type LoginParam struct {

@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
 	"net/url"
 	"os/exec"
 	"strconv"
 	"strings"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 )
 
 var songImpl database.SongsImpl
@@ -27,7 +27,7 @@ type UploadParam struct {
 	Category string `json:"value" binding:"required"`
 }
 
-//上传图片
+// 上传图片
 func Upload(c *gin.Context) {
 	//var json UploadParam
 	resp := util.GetResponse()
@@ -135,7 +135,7 @@ func readTicket(dst string) error {
 	return nil
 }
 
-//VatInvoice to database VatInvoice
+// VatInvoice to database VatInvoice
 func TranToVatDao(v *util.VatInvoice) *database.VatInvoice {
 	vat := &database.VatInvoice{}
 	vat.InvoiceCode = v.WordsResult.InvoiceCode

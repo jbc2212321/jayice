@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/middleware"
+	"jayice/routers"
+	"jayice/util"
 	"os"
-	"ticket/middleware"
-	"ticket/routers"
-	"ticket/util"
 )
 
 func main() {

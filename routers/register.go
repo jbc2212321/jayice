@@ -2,10 +2,10 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 	"time"
 )
 
@@ -17,7 +17,7 @@ type RegisterParam struct {
 	Category string `json:"value" binding:"required"`
 }
 
-//新用户注册
+// 新用户注册
 func Register(c *gin.Context) {
 	var json RegisterParam
 	resp := util.GetResponse()

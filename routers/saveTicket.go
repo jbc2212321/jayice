@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 	"time"
 )
 
@@ -25,7 +25,7 @@ type SaveTicketParam struct {
 	VatInvoice database.VatInvoice `json:"vatInvoice" binding:"required"`
 }
 
-//保存识别后的小票
+// 保存识别后的小票
 func SaveTicket(c *gin.Context) {
 	//var json database.VatInvoice
 	var json SaveTicketParam

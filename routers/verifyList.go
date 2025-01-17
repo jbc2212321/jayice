@@ -3,9 +3,9 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/middleware"
-	"ticket/util"
 )
 
 type UpdateVerifyListParam struct {
@@ -14,7 +14,7 @@ type UpdateVerifyListParam struct {
 	Status string `json:"status" binding:"required"`
 }
 
-//更新
+// 更新
 func UpdateVerifyList(c *gin.Context) {
 	var json UpdateVerifyListParam
 	resp := util.GetResponse()

@@ -3,15 +3,15 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"jayice/database"
+	"jayice/middleware"
+	"jayice/util"
 	"net/http"
-	"ticket/database"
-	"ticket/middleware"
-	"ticket/util"
 )
 
 var userDao database.UserImpl
 
-//用户列表
+// 用户列表
 func ListUser(c *gin.Context) {
 	resp := util.GetResponse()
 	users, err := userDao.ListUser()
@@ -41,7 +41,7 @@ type DelUserParam struct {
 	//Id string `json:"userId" binding:"required"`
 }
 
-//删除日志
+// 删除日志
 func DelUser(c *gin.Context) {
 	resp := util.GetResponse()
 	var json DelUserParam

@@ -75,7 +75,7 @@ func LoggerMiddleware() gin.HandlerFunc {
 		reqMethod := c.Request.Method         //请求方式
 		reqUrl := c.Request.RequestURI        //请求路由
 		statusCode := c.Writer.Status()       //状态码
-		remoteIP, _ := c.RemoteIP()           //请求IP
+		remoteIP := c.RemoteIP()              //请求IP
 		// 日志格式
 		Log.WithFields(logrus.Fields{
 			"status_code":  statusCode,
