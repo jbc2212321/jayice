@@ -1,7 +1,7 @@
 # /Dockerfile
 
 # Step 1: Build the Go binary
-FROM docker.1ms.run/golang:alpine
+FROM golang:alpine
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
